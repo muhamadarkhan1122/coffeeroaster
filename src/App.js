@@ -60,7 +60,7 @@ export default function App() {
     });
 
     // Baca status emergency dari control (bukan sensor)
-    const controlRef = ref(db, "control");
+    const controlRef = ref(db, "sensor/emergency");
 
     onValue(controlRef, (snapshot) => {
 
