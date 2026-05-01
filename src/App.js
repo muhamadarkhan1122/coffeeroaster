@@ -21,7 +21,7 @@ export default function App() {
   const [drumTemp, setDrumTemp] = useState(0);
   const [beanTemp, setBeanTemp] = useState(0);
   const [duration, setDuration] = useState("00:00");
-  const [status, setStatus] = useState("OFF");
+  const [status, setStatus] = useState("IDLE");
   const [emergency, setEmergency] = useState(false);
   const [tempHistory, setTempHistory] = useState([]);
 
@@ -42,7 +42,7 @@ export default function App() {
       setDrumTemp(data.suhuDrum || 0);
       setBeanTemp(data.suhuBiji || 0);
       setDuration(data.durasi || "00:00");
-      setStatus(data.status || "OFF");
+      setStatus(data.status || "IDLE");
 
       setTempHistory((prev) => {
 
