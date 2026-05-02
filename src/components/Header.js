@@ -23,7 +23,7 @@ export function Header({
           </h1>
 
           <p className="text-stone-400">
-            Premium Simple Dashboard
+            Dashboard
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export function Header({
             ? "EMERGENCY"
             : isRunning
             ? "ACTIVE"
-            : "IDLE"}
+            : "NOT ACTIVE"}
         </div>
 
       </div>
